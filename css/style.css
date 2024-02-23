@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    text-align: center;
+    background: url(https://i.pinimg.com/564x/c1/12/4a/c1124ae20ac3a1025ed738906708ea8f.jpg)no-repeat center center/cover;
+}
+.cronometro{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: white;
+    width: 20%;
+    height: 30%;
+}
+
+
+@media (max-width:420px) {
+    .cronometro{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        background: white;
+        width: 40%;
+        height: 20%;
+    }
+}
+@media (max-width:810px) {
+    .cronometro{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        background: white;
+        width: 40%;
+        height: 25%;
+    }
+}
