@@ -6,29 +6,83 @@ body{
     text-align: center;
     background: url(https://i.pinimg.com/564x/c1/12/4a/c1124ae20ac3a1025ed738906708ea8f.jpg)no-repeat center center/cover;
 }
-.cronometro{
-    display: flex;
+.cronometroP{
+    display: grid;
     justify-content:center;
     align-items:center;
     background: white;
-    width: 20%;
+    width: 30%;
     height: 30%;
+    border-radius: 60px;
+}
+#numeros{
+    text-align: center;
+    font-size: 20px;
 }
 
+.boton{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+button{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+button:hover{
+    filter: opacity(0.5);
+    scale: 1.1;
+}
+.rojo{
+    background: red;
+}
+.verde{
+    background: green;
+}
+.repetir{
+    width: 30px;
+}
 
 @media (max-width:420px) {
-    .cronometro{
+    .cronometroP{
         display: flex;
+        flex-direction: column;
         justify-content:center;
         align-items:center;
         background: white;
-        width: 40%;
-        height: 20%;
+        width: 100px;
+        height: 80px;
+        border-radius: 55px;
     }
+    #numeros{
+        font-size: 10px;
+    }
+    .boton{
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        border-radius: 10px;
+    }
+    button:hover{
+        filter: opacity(0.5);
+        scale: 1.1;
+    }
+    .repetir{
+        width: 15px;
+    }
+
 }
 @media (max-width:810px) {
-    .cronometro{
+    .cronometroP{
         display: flex;
+        flex-direction: column;
         justify-content:center;
         align-items:center;
         background: white;
